@@ -11,7 +11,7 @@ var TechStack = () => {
                         <Image src="/flutterio-icon.svg" width="35" height="35"></Image>
                     </div>
                     <div className="circle" title="React">
-                        <Image src="https://stefantopalovicdev.vercel.app/static/media/react.afac9c43724070bf6674f2692b7356a9.svg" width="40" height="40"></Image>
+                        <Image src="https://stefantopalovicdev.vercel.app/static/media/react.afac9c43724070bf6674f2692b7356a9.svg " width="40" height="40"></Image>
 
                     </div>
                     <div className="circle" title="Python">
