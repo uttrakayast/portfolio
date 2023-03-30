@@ -18,16 +18,16 @@ var Navbar = () => {
                     className="navigation-menu">
                     <ul>
                         <li>
-                            <Link href="/home">Home</Link>
+                            <Link href="/">Home</Link>
                         </li>
                         <li>
-                            <Link href="/about">About</Link>
+                            <Link href="#about">About</Link>
                         </li>
                         <li>
-                            <Link href="/blog">Blog</Link>
+                            <Link href="#blog">Blog</Link>
                         </li>
                         <li>
-                            <Link href="/contact">Contact</Link>
+                            <Link href="#contact">Contact</Link>
                         </li>
                     </ul>
                 </div>

@@ -2,7 +2,7 @@ import About from '@/components/about';
 import HeroBanner from '@/components/HeroBanner';
 import Navbar from '@/components/Navbar'
 import TechStack from '@/components/TechStack';
-import Image from 'next/image';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
@@ -11,6 +11,8 @@ export default function Home() {
       <HeroBanner />
       <TechStack />
       <About />
+      {/* <Portfolio /> */}
+      <Contact />
     </>
   )
 }

@@ -4,16 +4,16 @@ import React from "react";
 var About = () => {
     return (
         <>
-            <div className=" section">
+            <div className="section" id="about">
                 <div className="container">
                     <div >
-                        <Image src="/macImageAbout.webp" width="400" height="350" alt="aboutImage" style={{
+                        <Image src="/about.gif" width="400" height="350" alt="aboutImage" style={{
                         borderRadius: "5%"
                     }} />
                     </div>
                     <div className="aboutMe-desc">
                         <h4 style={{
-                            color: "#147efb",
+                            color: "#847eff",
                             fontSize: "1.1rem"
                         }}>ABOUT ME</h4>
                         <h1 className="hero-text" style={{ fontSize: "1.5rem", marginTop: "0.5rem", marginBottom: "0.7rem" }}>

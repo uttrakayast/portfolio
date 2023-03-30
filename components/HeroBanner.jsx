@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -9,17 +10,17 @@ var HeroBanner = () => {
         <>
             <div className="main" >
                 <div className='container' style={{
-                marginTop: "10rem"
+                marginTop: "8rem"
             }}>
                     <div className="left">
                         <div className='title-text'>
                             <h1 className='hero-text'>
-                                Full Stack Mobile Developer 📱
-                                {/* <Typewriter options={{
-                                    strings: ['Full Stack Mobile Developer 📱'],
+                                {/* Full Stack Mobile Developer 📱 */}
+                                <Typewriter options={{
+                                    strings: ['Flutter Mobile 📱 Developer', 'Full Stack Mobile 📱 Developer', 'Backend 👨🏼‍💻 Developer'],
                                     autoStart: true,
                                     loop: true,
-                                }} /> */}
+                                }} />
                             </h1>
                         </div>
                         <h3 className='desc'>Hi, I&apos;m Umesh Kumar. A passionate Flutter Developer based at Delhi, India. 📍</h3>
@@ -33,11 +34,17 @@ var HeroBanner = () => {
                         </div>
                     </div>
 
-                    <div className='shape right' style={{
+                    <div className="right" style={{
+                        // backgroundImage: "url('https://tenor.com/bDJQV.gif')",
+                    }}>
+                        <Image src="/developing.gif" alt="gif" height="400" width="400" color="red" />
+                    </div>
+
+                    {/* <div className='shape right' style={{
                         // backgroundImage: "url('public/profile.jpg')",
                     }}>
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
