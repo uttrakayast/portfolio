@@ -17,7 +17,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  position: relative;
+  position: fixed;
   padding: 0.5rem 0rem;
   background-color: #fff;
   color: black;
@@ -130,16 +130,26 @@ body {
 }
 
 .main{
+  
   align-items: center;
   display: flex;
   /* width: 100vw; */
   justify-content: center;
 }
 
+.section {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   align-items: center;
   display: flex;
-  width: 120vh;
+  width: 130vh;
   justify-content: center;
 }
 
@@ -147,6 +157,7 @@ body {
   align-items: center;
   display: flex;
   width: 120vh;
+  margin-bottom: 5rem;
   justify-content: left;
 }
 
@@ -191,6 +202,10 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   margin-right: 4rem;
+}
+
+.aboutMe-desc{
+  margin-left: 4rem;
 }
 
 .circle {

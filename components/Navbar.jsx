@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 var Navbar = () => {
     return (
         <>
             <nav className="nav">
                 <h3>
-                <a href="/" className="logo">
+                <Link href="/" className="logo">
                     umesh.me
-                </a>
+                </Link>
                 </h3>
                 <button className="hamburger">
                     <Image src="/menu-bar.png" width="30" height="30" ></Image>
@@ -17,16 +18,16 @@ var Navbar = () => {
                     className="navigation-menu">
                     <ul>
                         <li>
-                            <a href="/home">Home</a>
+                            <Link href="/home">Home</Link>
                         </li>
                         <li>
-                            <a href="/about">About</a>
+                            <Link href="/about">About</Link>
                         </li>
                         <li>
-                            <a href="/blog">Blog</a>
+                            <Link href="/blog">Blog</Link>
                         </li>
                         <li>
-                            <a href="/contact">Contact</a>
+                            <Link href="/contact">Contact</Link>
                         </li>
                     </ul>
                 </div>
