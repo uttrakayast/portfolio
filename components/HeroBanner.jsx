@@ -25,10 +25,10 @@ var HeroBanner = () => {
                         </div>
                         <h3 className='desc'>Hi, I&apos;m Umesh Kumar. A passionate Flutter Developer based at Delhi, India. 📍</h3>
                         <div className='profiles'>
-                            <Link href="https://www.linkedin.com/in/its-umesh/">
+                            <Link href="https://www.linkedin.com/in/its-umesh/" target="_blank">
                                 <FaLinkedin className="social-logo linkedIn" fontSize="30px" />
                             </Link>
-                            <Link href="https://github.com/Hon3y9718">
+                            <Link href="https://github.com/Hon3y9718" target="_blank">
                                 <FaGithub className="social-logo github" fontSize="30px" />
                             </Link>
                         </div>
