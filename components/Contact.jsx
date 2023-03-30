@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { AiFillPhone, AiFillMail } from 'react-icons/ai'
 import { ImTwitter, ImInstagram, ImWhatsapp } from 'react-icons/im'
@@ -18,21 +19,31 @@ var Contact = () => {
                             Come on, Say Something!
                         </h1>
                         <div className="container-tech-stack" style={{marginTop: "3rem"}}>
-                        <div className="circle" title="Phone">
+                        <Link href="tel:9718649768">
+                        <div className="circle" title="Twitter">
                             <AiFillPhone fontSize="30" color="#147efb"/>
                         </div>
-                        <div className="circle" title="Email">
+                        </Link>
+                        <Link href="mailto:uk481281@gmail.com">
+                        <div className="circle" title="Twitter">
                             <AiFillMail fontSize="30" color="#147efb"/>
                         </div>
+                        </Link>
+                        <Link href="https://twitter.com/not_umesh" target="_blank">
                         <div className="circle" title="Twitter">
                             <ImTwitter fontSize="30" color="#147efb"/>
                         </div>
-                        <div className="circle" title="Twitter">
+                        </Link>
+                        <Link href="https://instagram.com/say_hon3y" target="_blank">
+                        <div className="circle" title="Instagram">
                             <ImInstagram fontSize="30" color="#147efb"/>
                         </div>
-                        <div className="circle" title="Twitter">
-                            <ImWhatsapp fontSize="30" color="#147efb"/>
-                        </div>
+                        </Link>
+                        <Link href="https://api.whatsapp.com/send/?phone=919718649768&text=Hey%20Umesh" target="_blank">
+                            <div className="circle" title="Twitter">
+                                <ImWhatsapp fontSize="30" color="#147efb"/>
+                            </div>
+                        </Link>
                         </div>
                 </div>
             </div>

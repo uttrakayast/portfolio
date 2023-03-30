@@ -8,7 +8,7 @@ var Navbar = () => {
             <nav className="nav">
                 <h3>
                 <Link href="/" className="logo">
-                    umesh.me
+                    umeshKumr
                 </Link>
                 </h3>
                 <button className="hamburger">
@@ -23,9 +23,9 @@ var Navbar = () => {
                         <li>
                             <Link href="#about">About</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link href="#blog">Blog</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link href="#contact">Contact</Link>
                         </li>
