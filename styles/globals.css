@@ -27,6 +27,7 @@ body {
   background-color: #fff;
   color: black;
   margin-bottom: 5rem;
+  z-index: 1;
   box-shadow: 0 2px 2px 1px rgba(9, 9, 9, 0.06);
 }
 
@@ -157,8 +158,8 @@ body {
   padding-right: 15vw;
   padding-top: 8vh;
   display: flex;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
