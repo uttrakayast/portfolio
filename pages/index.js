@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import TechStack from '@/components/TechStack';
 import Contact from '@/components/Contact';
 import Head from 'next/head';
+import Projects from '@/components/projectCards';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <HeroBanner />
       <TechStack />
       <About />
-      {/* <Portfolio /> */}
+      {/* <Projects /> */}
       <Contact />
     </>
   )

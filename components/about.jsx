@@ -50,7 +50,7 @@ var About = () => {
               Proficient in Node JS, Django (Python) | Expertise in crafting
               dynamic UIs, optimizing code, and leveraging AWS for robust
               backends. Passionate about delivering seamless user experiences
-              and collaborating with cross-functional teams. Let's build
+              and collaborating with cross-functional teams. Let&apos;s build
               something incredible together! #MobileDev #Backend #AWS
             </p>
           </div>

@@ -41,7 +41,7 @@ var Contact = () => {
               marginTop: "0.5rem",
             }}
           >
-            Options are on the table. Let's chat!
+            Options are on the Table! Let&apos;s chat!
           </h6>
           <div className="container-tech-stack" style={{ marginTop: "3rem" }}>
             <Link href="tel:9718649768">
