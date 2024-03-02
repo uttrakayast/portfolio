@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 import TechStack from '@/components/TechStack';
 import Contact from '@/components/Contact';
 import Head from 'next/head';
-import Projects from '@/components/projectCards';
+import Projects from '@/components/project';
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <HeroBanner />
       <TechStack />
       <About />
-      {/* <Projects /> */}
+      <Projects />
       <Contact />
     </>
   )

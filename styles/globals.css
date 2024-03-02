@@ -151,6 +151,23 @@ body {
   justify-content: center;
 }
 
+.section-proj-main {
+  background-color: #fff;
+  height: 200vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section-proj {
+  background-color: #fff;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .contact-section {
   background-color: #f9f9f9;
   height: 30vh;
@@ -167,6 +184,15 @@ body {
   display: flex;
   width: 130vh;
   justify-content: center;
+}
+
+
+.container-projects {
+  align-items: left;
+  display: flex;
+  width: 130vh;
+  justify-content: left;
+  /* background-color: red; */
 }
 
 .container-tech-stack {
@@ -224,6 +250,11 @@ body {
   margin-left: 4rem;
 }
 
+.project-desc{
+  margin-left: 4rem;
+  width: 40vw;
+}
+
 .circle {
   display: flex;
   width: 4rem;
@@ -268,5 +299,33 @@ body {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
     /* background-image: url("../public/profileImage.jpeg") cover; */
+  }
+}
+
+.screenshot-box {
+  width: 500px; /* Set the width of the box */
+  height: 300px; /* Set the height of the box */
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; /* Position relative for absolute positioning of content */
+}
+
+.screenshot-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/mindmeadow.png');
+  background-size: 100% auto;
+  /* animation: scrollBackground 5s linear infinite; Adjust speed as needed */
+}
+
+@keyframes scrollBackground {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-100%);
   }
 }
