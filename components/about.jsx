@@ -34,7 +34,7 @@ var About = () => {
                 marginBottom: "0.7rem",
               }}
             >
-              A Mobile Developer based in Delhi, India 📍
+              A Software Engineer based in Delhi, India 📍
             </h1>
             <p
               style={{
@@ -45,16 +45,13 @@ var About = () => {
                 lineHeight: "1.5",
               }}
             >
-              A Full Stack Mobile Developer based in Delhi, India 📍 As a Full
-              Stack Mobile Developer, I possess an impressive arsenal of skills
-              in Android (Kotlin/Java), Flutter, React Native, Node JS and
-              Django (Python). I excel in designing and maintaining production
-              level Mobile Applications that offer a smooth user experience. My
-              expertise lies in crafting dynamic, engaging interfaces through
-              writing clean and optimized code and utilizing cutting-edge
-              development tools and techniques. I am also a team player who
-              thrives in collaborating with cross-functional teams to produce
-              outstanding mobile applications and production level Backends.
+              📱 Full Stack Mobile Developer based in Delhi, India 📍 |
+              Specializing in Android (Kotlin/Java), Flutter, React Native |
+              Proficient in Node JS, Django (Python) | Expertise in crafting
+              dynamic UIs, optimizing code, and leveraging AWS for robust
+              backends. Passionate about delivering seamless user experiences
+              and collaborating with cross-functional teams. Let's build
+              something incredible together! #MobileDev #Backend #AWS
             </p>
           </div>
         </div>
