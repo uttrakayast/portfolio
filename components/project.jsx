@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCard from "./mindmeadowCard";
+import ProjectCard from "./projectCard";
 
 var Projects = () => {
   return (

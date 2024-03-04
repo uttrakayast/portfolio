@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Blog() {
@@ -22,7 +23,7 @@ function Blog() {
         textAlign: "center",
         color: "#a8adb5"
       }}>
-        <a href="/">Back to Home</a>
+        <Link href="/">Back to Home</Link>
       </div>
     </div>
   );
