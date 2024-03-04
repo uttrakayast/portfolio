@@ -4,7 +4,7 @@ import React from "react";
 var About = () => {
   return (
     <>
-      <div className="section" id="about">
+      <div className="section" id="about" style={{marginLeft: 30, marginRight: 30}}>
         <div className="container">
           <div>
             <Image

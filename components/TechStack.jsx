@@ -27,7 +27,7 @@ var TechStack = () => {
             <Image src="/apple-logo.png" width="35" height="35" alt="python" />
           </div>
           <div className="circle" title="React">
-            <Image src="/react-logo.png" width="40" height="40"></Image>
+            <Image src="/react-logo.png" width="40" height="40" alt="React"></Image>
           </div>
           <div className="circle" title="Django">
             <Image src="/django-logo.svg" width="35" height="35" alt="django" />

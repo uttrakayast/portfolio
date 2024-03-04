@@ -12,7 +12,7 @@ var Navbar = () => {
                 </Link>
                 </h3>
                 <button className="hamburger">
-                    <Link href="/blog" style={{fontSize: "1.0rem", fontWeight: "bold"}}>Blog</Link>
+                    <Link href="/blog" style={{fontSize: "1.0rem", fontWeight: "bold", textDecoration: "none", color: "#847EFF"}}>Blog</Link>
                 </button>
                 <div
                     className="navigation-menu">

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./article.css" class="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="main">
+    <figure>
+      <img
+        alt=""
+        src="https://cdn-images-1.medium.com/max/1024/0*ywPwWlRDntEeTX9l"
+      />
+      <figcaption>
+        Photo by
+        <a
+          href="https://unsplash.com/@pakata?utm_source=medium&amp;utm_medium=referral"
+          >Pakata Goh</a
+        >
+        on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral"
+          >Unsplash</a
+        >
+      </figcaption>
+    </figure>
+    <p>
+      Are you tired of the hassle of managing fetch requests, state, and complex
+      code just to render data on your React page? If you’ve been nodding along,
+      you’re in for a treat! Next.js, a full stack React framework, has introduced
+      server components in version 12, a game-changer that simplifies your React
+      development process. In this article, we’ll delve into the world of server
+      components, explore their benefits, and understand how they reshape the way we
+      build web applications.
+    </p>
+    <h4>Understanding the Server Components Paradigm</h4>
+    <p>
+      If you’ve dabbled in React before, you’ve probably encountered the challenges
+      of handling data fetching, state management, and intricate useEffect hooks
+      just to render a page. Enter server components — a novel approach introduced
+      by Next.js. Server components enable you to run your code directly on the
+      server, streamlining the fetch process and offering a more straightforward
+      development experience.
+    </p>
+    <blockquote>
+      Imagine waving goodbye to convoluted code and welcoming a cleaner, more
+      intuitive way of handling data. With server components, you can achieve just
+      that. Let’s explore some key benefits.
+    </blockquote>
+    <p><strong>1. Async Awesomeness: Making Fetching a Breeze</strong></p>
+    <p>
+      One of the standout features of server components is their ability to operate
+      as async components. This means you can directly use the await keyword for
+      fetch requests or any time-consuming operations. Let’s take a look at a
+      simplified example:
+    </p>
+    <pre>// Server Component<br>async function MyServerComponent() {<br>  const data = await fetchData(); // Fetch data from an API<br>  return &lt;div&gt;{data}&lt;/div&gt;;<br>}</pre>
+    <p>
+      This asynchronous approach aligns more with standard JavaScript practices,
+      making your code cleaner and easier to understand.
+    </p>
+    <p><strong>2. Performance Boost with Caching</strong></p>
+    <p>
+      Server components offer a substantial performance boost through caching.
+      Leveraging the server’s cache, data fetched by one user becomes quickly
+      accessible to all users. This eliminates the need for individual client-side
+      caching, resulting in faster load times for everyone.
+    </p>
+    <pre>// Server Component with Caching<br>function CachedServerComponent() {<br>  // ... Fetch data and return JSX<br>  // Caching occurs automatically on the server<br>}</pre>
+    <p><strong>3. Smaller Bundles, Faster Loads</strong></p>
+    <p>
+      Reducing bundle size is a constant pursuit in web development. With server
+      components, the bundle sent to the client is significantly smaller, thanks to
+      the server-side processing. This not only improves performance but also
+      contributes to a faster overall page load.
+    </p>
+    <pre>// Smaller Bundle Example<br>import { SmallLibraryFunction } from 'big-library'; // Only the necessary parts are sent to the client</pre>
+    <p><strong>4. SEO Superpowers</strong></p>
+    <p>
+      Server components shine when it comes to Search Engine Optimization (SEO).
+      Unlike client components, server components send fully populated HTML to the
+      client, providing search engines with complete information. This leads to
+      better SEO results without additional efforts.
+    </p>
+    <h4>Now let’s talk about the downsides!</h4>
+    <p>
+      Despite their numerous advantages, server components have limitations. They
+      lack interactivity, meaning no event listeners or hooks like useEffect,
+      useState are allowed. Additionally, browser-based APIs such as local storage
+      are off-limits within server components.
+    </p>
+    <pre>// Server Component Limitation<br>function InteractiveServerComponent() {<br>  // No interactivity allowed, e.g., onClick or useEffect<br>  // Browser-based APIs like local storage cannot be used<br>}</pre>
+    <p>
+      Understanding these constraints is crucial for developers as it necessitates a
+      shift in the traditional approach to handling interactive elements in web
+      applications.
+    </p>
+    <p>
+      So, how can we overcome these limitations and bring interactivity to the
+      server components?
+      <strong
+        >The answer lies in a strategic approach to nesting components.</strong
+      >
+    </p>
+    <p>
+      Nesting server and client components requires a thoughtful approach. While
+      server components can contain client components, going from server to client
+      and back isn’t straightforward. The key is to pass server components as props
+      to client components.
+    </p>
+    <pre>// Server Component<br>function ParentServerComponent({ children }) {<br>  return &lt;div&gt;{children}&lt;/div&gt;;<br>}<br><br>// Client Component<br>import { ParentServerComponent } from './ParentServerComponent';<br><br>function ChildClientComponent() {<br>  return (<br>    &lt;div&gt;<br>      &lt;ParentServerComponent&gt;{/* Server component content */}&lt;/ParentServerComponent&gt;<br>    &lt;/div&gt;<br>  );<br>}</pre>
+    <p>
+      By adopting this approach, we can maintain a clear separation of concerns
+      while introducing interactivity into server components. Passing server
+      components as props ensures a seamless integration of both server and client
+      functionalities, allowing us to make the most of the strengths of each.
+    </p>
+    <h4>
+      If you’re excited to dive into the world of Next.js and server components,
+      here are some essential resources to kickstart your learning journey:
+    </h4>
+    <ul>
+      <li>
+        <a href="https://nextjs.org/docs">Next.js Documentation </a>— The official
+        Next.js documentation is a comprehensive guide to all things Next.js.
+      </li>
+    </ul>
+    <p><a href="https://nextjs.org/docs">Docs | Next.js</a></p>
+    <ul>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=ZjAqacIC_3c&amp;list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI"
+          >Learn Next.js on YouTube </a
+        >— A fantastic video tutorial to get hands-on experience with Next.js.
+      </li>
+    </ul>
+    <a href="https://medium.com/media/0d004f8530185194a62ea9aefc003153/href"
+      >https://medium.com/media/0d004f8530185194a62ea9aefc003153/href</a
+    >
+    <p>
+      <strong
+        >I hope this article has been helpful for you. Thank you for taking the time
+        to read it.</strong
+      >
+    </p>
+    <p>
+      <a href="https://medium.com/@asifulalamfahim/subscribe"
+        >Get an email whenever Asiful Alam Fahim publishes.</a
+      >
+    </p>
+    <p>
+      <strong
+        >If you’re interested in more in-depth and technical write-ups like this
+        one, be sure to follow me on </strong
+      ><a href="https://medium.com/@asifulalamfahim/subscribe"
+        ><strong>Medium</strong></a
+      ><strong
+        >. And for all things related to startups, business, or web development,
+        connect with me on </strong
+      ><a href="https://www.linkedin.com/in/asifulalam-fahim/"
+        ><strong>LinkedIn</strong></a
+      ><strong>.</strong>
+    </p>
+    <p>
+      <strong><em>Ready to design and develop your custom website? </em></strong
+      ><a href="https://asifulalam.me/contact"
+        ><strong><em>Please don’t hesitate to contact me</em></strong></a
+      ><strong
+        ><em
+          >! I’m always here to answer your questions and help bring your vision to
+          life. To keep the inspiration flowing, check out the below articles I’ve
+          written. Together, let’s continue to grow and expand our knowledge!</em
+        ></strong
+      >
+    </p>
+    <h3>In Plain English 🚀</h3>
+    <p>
+      <em>Thank you for being a part of the </em
+      ><a href="https://plainenglish.io/"
+        ><strong><em>In Plain English</em></strong></a
+      ><em> community! Before you go:</em>
+    </p>
+    <ul>
+      <li>
+        Be sure to <strong>clap</strong> and <strong>follow</strong> the
+        writer ️👏<strong>️️</strong>
+      </li>
+      <li>
+        Follow us: <a href="https://twitter.com/inPlainEngHQ"><strong>X</strong></a
+        ><strong> | </strong
+        ><a href="https://www.linkedin.com/company/inplainenglish/"
+          ><strong>LinkedIn</strong></a
+        ><strong> | </strong
+        ><a href="https://www.youtube.com/channel/UCtipWUghju290NWcn8jhyAw"
+          ><strong>YouTube</strong></a
+        ><strong> | </strong
+        ><a href="https://discord.gg/in-plain-english-709094664682340443"
+          ><strong>Discord</strong></a
+        ><strong> | </strong
+        ><a href="https://newsletter.plainenglish.io/"
+          ><strong>Newsletter</strong></a
+        >
+      </li>
+      <li>
+        Visit our other platforms:
+        <a href="https://stackademic.com/"><strong>Stackademic</strong></a
+        ><strong> | </strong
+        ><a href="https://cofeed.app/"><strong>CoFeed</strong></a
+        ><strong> | </strong
+        ><a href="https://venturemagazine.net/"><strong>Venture</strong></a>
+      </li>
+      <li>
+        More content at
+        <a href="https://plainenglish.io/"><strong>PlainEnglish.io</strong></a>
+      </li>
+    </ul>
+    <img
+      src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=8fe04c62ea3c"
+      width="1"
+      height="1"
+      alt=""
+    />
+    <hr />
+    <p>
+      <a
+        href="https://javascript.plainenglish.io/power-of-next-js-server-components-in-react-development-8fe04c62ea3c"
+        >Power of Next.js Server Components in React Development</a
+      >
+      was originally published in
+      <a href="https://javascript.plainenglish.io/">JavaScript in Plain English</a>
+      on Medium, where people are continuing the conversation by highlighting and
+      responding to this story.
+    </p>  
+  </div>
+</body>
+</html>
