@@ -306,7 +306,7 @@ a {
   height: 200vh;
   align-items: flex-start;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .section-proj {
