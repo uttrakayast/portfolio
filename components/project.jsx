@@ -1,8 +1,5 @@
-import Image from "next/image";
 import React from "react";
-import MindMeadowProjectCard from "./mindmeadowCard";
-import { FaithBookProjectCard } from "./faithbookCard";
-import OPProjectCard from "./opCard";
+import ProjectCard from "./mindmeadowCard";
 
 var Projects = () => {
   return (
@@ -28,11 +25,19 @@ var Projects = () => {
             >
               All Project here are End-to-End Solutions
             </h1>
-            <MindMeadowProjectCard />
+            <ProjectCard name="Mind Meadow" shortdesc="Center for Child Development & Mental Health Services." desc="Designed and developed a Website and Mobile Application for Mind
+            Meadow which is a Multidisciplinary Center focused on Child
+            Development & Mental Health Services." link="https://www.mindmeadow.in/" image="/mindmeadow.png" colorCode="#6BC067" />
             
-            <OPProjectCard />
+            <ProjectCard name="Faithbook" shortdesc="Social Media for Catholic Youth in India" desc="Designed and developed a Website as well as
+            a user-friendly mobile application for FAITHBOOK which
+            offers a platform for connecting and bonding the catholic community." link="https://www.myfaithbook.in/" image="/faithbook-web.png" colorCode="#0B6375" />
 
-            <FaithBookProjectCard />
+<ProjectCard name="Opportunity Plate" shortdesc="Job Seekers and Recruiters Network." desc="Opportunity plate is a platform that initiates an interactive
+            approach that directly links and closes the gap between job seekers
+            and recruiters. Main motive was developing an
+            attractive website and application keeping in mind the visual
+            elements as well as functionality." link="https://www.opportunityplate.com/" image="/OP.png" colorCode="#96C13E" />
 
           </div>
         </div>

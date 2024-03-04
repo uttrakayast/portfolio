@@ -4,7 +4,6 @@ import { ImTv } from "react-icons/im";
 export const FaithBookProjectCard = () => {
   const images = [
     "/faithbook-web.png",
-    "/faithbook-web.png",
     // Add more image paths as needed
   ];
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -6,9 +6,8 @@ html {
 
 body {
   background-color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
-
 }
 
 * {
@@ -60,7 +59,7 @@ body {
   color: #2d2e32;
   font-weight: 600;
   font-size: 1.1rem;
-  transition: all .23s;
+  transition: all 0.23s;
   width: 100%;
 }
 
@@ -81,13 +80,57 @@ body {
   display: none;
 }
 
+.carousel {
+  width: 400px;
+  height: 350px;
+  overflow: "hidden";
+  position: "relative";
+  background-color: "#F1F1F1";
+  border-radius: "10px";
+}
+
+.left-text {
+  margin-left: 4rem;
+  width: 40vw;
+}
+
 @media screen and (max-width: 768px) {
-  .container{
+  .container {
+    display: inline;
+    align-items: center;
+    width: 150vw;
+    justify-content: center;
+  }
+  .left-text {
+    width: 100vw;
+  }
+  body {
+    position: absolute;
+  }
+  .carousel {
+    display: flex;
+    height: 350;
+    overflow: "hidden";
+    background-color: "#F1F1F1";
+    border-radius: "10px";
+  }
+  .contact-section {
+    background-color: #f9f9f9;
+    height: 30vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .right {
+    display: none;
+  } */
+  .main {
     display: inline;
   }
-  .main{
-    display: inline;
-  }
+
   .navigation-menu ul {
     position: absolute;
     top: 60px;
@@ -130,12 +173,12 @@ body {
 
 :root {
   --background: #005;
-  --primary: #88D5BF;
-  --secondary: #5D6BF8;
+  --primary: #88d5bf;
+  --secondary: #5d6bf8;
   --third: #e27fcb;
 }
 
-.main{
+.main {
   align-items: center;
   display: flex;
   /* width: 100vw; */
@@ -145,17 +188,15 @@ body {
 .section {
   background-color: #fff;
   height: 80vh;
-  display: flex;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
 .section-proj-main {
-  background-color: #fff;
   height: 200vh;
+  align-items: center;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
 }
 
@@ -164,7 +205,6 @@ body {
   height: 60vh;
   display: flex;
   align-items: center;
-  display: flex;
   justify-content: center;
 }
 
@@ -186,13 +226,11 @@ body {
   justify-content: center;
 }
 
-
 .container-projects {
   align-items: left;
   display: flex;
   width: 130vh;
-  justify-content: left;
-  /* background-color: red; */
+  justify-content: right;
 }
 
 .container-tech-stack {
@@ -203,15 +241,15 @@ body {
   justify-content: left;
 }
 
-.hero-text{
+.hero-text {
   color: #2d2e32;
-  font-size: 4.0rem;
+  font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
-.desc{
+.desc {
   font-size: 1.1rem;
   color: #767676;
   font-weight: 400;
@@ -220,15 +258,15 @@ body {
   margin-top: 2rem;
 }
 
-.social-logo{
+.social-logo {
   padding-right: 10px;
 }
- a{
+a {
   color: #000;
   text-decoration: none;
 }
 
-.linkedIn:hover{
+.linkedIn:hover {
   color: #0b65c2;
 }
 
@@ -236,7 +274,7 @@ body {
   margin-right: 1rem;
 }
 
-.tech-stack{
+.tech-stack {
   margin-top: 15vh;
 }
 
@@ -246,11 +284,11 @@ body {
   margin-right: 4rem;
 }
 
-.aboutMe-desc{
+.aboutMe-desc {
   margin-left: 4rem;
 }
 
-.project-desc{
+.project-desc {
   margin-left: 4rem;
   width: 40vw;
 }
@@ -285,7 +323,11 @@ body {
 @keyframes morph {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(
+      45deg,
+      var(--primary) 0%,
+      var(--secondary) 100%
+    );
     /* background-image: url("/public/profileImage.jpeg") cover; */
   }
 
@@ -297,7 +339,11 @@ body {
 
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(
+      45deg,
+      var(--primary) 0%,
+      var(--secondary) 100%
+    );
     /* background-image: url("../public/profileImage.jpeg") cover; */
   }
 }
@@ -316,16 +362,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/mindmeadow.png');
+  background-image: url("/mindmeadow.png");
   background-size: 100% auto;
   /* animation: scrollBackground 5s linear infinite; Adjust speed as needed */
 }
 
 @keyframes scrollBackground {
   from {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   to {
-      transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 }

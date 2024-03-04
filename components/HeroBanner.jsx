@@ -15,7 +15,6 @@ var HeroBanner = () => {
                     <div className="left">
                         <div className='title-text'>
                             <h1 className='hero-text'>
-                                {/* Full Stack Mobile Developer 📱 */}
                                 <Typewriter options={{
                                     strings: ['Flutter Mobile 📱 Developer', 'Full Stack Mobile 📱 Developer', 'Backend 👨🏼‍💻 Developer'],
                                     autoStart: true,
@@ -34,17 +33,9 @@ var HeroBanner = () => {
                         </div>
                     </div>
 
-                    <div className="right" style={{
-                        // backgroundImage: "url('https://tenor.com/bDJQV.gif')",
-                    }}>
+                    <div className="right">
                         <Image src="/developing.gif" alt="gif" height="400" width="400" color="red" />
                     </div>
-
-                    {/* <div className='shape right' style={{
-                        // backgroundImage: "url('public/profile.jpg')",
-                    }}>
-
-                    </div> */}
                 </div>
             </div>
         </>

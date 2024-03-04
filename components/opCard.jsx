@@ -40,7 +40,23 @@ export const OPProjectCard = () => {
   return (
     <div className="section-proj">
       <div className="container">
-        
+      <div
+          className="carousel"
+          style={{
+            width: 400,
+            height: 350,
+            overflow: "hidden",
+            position: "relative",
+            backgroundColor: "#F1F1F1",
+            borderRadius: "10px"
+          }}
+        >
+          <img
+            src={images[currentImageIndex]}
+            alt={`Image ${currentImageIndex + 1}`}
+            style={{ width: "100%", height: "100%", objectFit: "contain"}}
+          />
+        </div>
         <div className="project-desc">
           <h4 style={{ color: "#96C13E", fontSize: "1.1rem" }}>Opportunity Plate</h4>
           <h1
@@ -83,23 +99,6 @@ export const OPProjectCard = () => {
               <ImTv fontSize="15" color="#96C13E" />
             </span>
           </button>
-        </div>
-        <div
-          className="carousel"
-          style={{
-            width: 400,
-            height: 350,
-            overflow: "hidden",
-            position: "relative",
-            backgroundColor: "#F1F1F1",
-            borderRadius: "10px"
-          }}
-        >
-          <img
-            src={images[currentImageIndex]}
-            alt={`Image ${currentImageIndex + 1}`}
-            style={{ width: "100%", height: "100%", objectFit: "contain"}}
-          />
         </div>
       </div>
     </div>

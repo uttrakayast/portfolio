@@ -12,7 +12,7 @@ var Navbar = () => {
                 </Link>
                 </h3>
                 <button className="hamburger">
-                    <Image src="/menu-bar.png" width="30" height="30" ></Image>
+                    <Link href="/blog" style={{fontSize: "1.0rem", fontWeight: "bold"}}>Blog</Link>
                 </button>
                 <div
                     className="navigation-menu">
@@ -25,6 +25,9 @@ var Navbar = () => {
                         </li>
                         <li>
                             <Link href="#projects">Projects</Link>
+                        </li>
+                        <li>
+                            <Link href="/blog">Blog</Link>
                         </li>
                         <li>
                             <Link href="#contact">Contact</Link>

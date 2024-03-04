@@ -1,14 +1,8 @@
 import React, { useEffect, useState } from "react";
-import {
-  ImTv,
-} from "react-icons/im";
+import { ImTv } from "react-icons/im";
 
-const MindMeadowProjectCard = () => {
-  const images = [
-    "/mindmeadow.png",
-    "/mindmeadowMobile.png",
-    // Add more image paths as needed
-  ];
+const ProjectCard = (props) => {
+  const images = props.images;
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -24,44 +18,35 @@ const MindMeadowProjectCard = () => {
     );
   };
 
-  useEffect(() => {
-    const intervalId = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+  // useEffect(() => {
+  //   const intervalId = setInterval(nextSlide, 5000); // Change slide every 5 seconds
 
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [currentImageIndex]);
+  //   return () => {
+  //     clearInterval(intervalId);
+  //   };
+  // }, [currentImageIndex]);
 
   const handleButtonClick = () => {
     // Define the URL of the live demo page
-    const liveDemoUrl = 'https://www.mindmeadow.in/'; // Replace with the actual URL of your live demo
+    const liveDemoUrl = props.link; // Replace with the actual URL of your live demo
 
     // Open the live demo page in a new browser window or tab
-    window.open(liveDemoUrl, '_blank');
+    window.open(liveDemoUrl, "_blank");
   };
+
+  var colorCode = props.colorCode
 
   return (
     <div className="section-proj">
       <div className="container">
-        <div
-          className="carousel"
-          style={{
-            width: 400,
-            height: 350,
-            overflow: "hidden",
-            position: "relative",
-            backgroundColor: "#F1F1F1",
-            borderRadius: "10px"
-          }}
-        >
+        <div className="carousel">
           <img
-            src={images[currentImageIndex]}
-            alt={`Image ${currentImageIndex + 1}`}
+            src={props.image}
             style={{ width: "100%", height: "100%", objectFit: "contain" }}
           />
         </div>
-        <div className="project-desc">
-          <h4 style={{ color: "#6BC067", fontSize: "1.1rem" }}>Mind Meadow</h4>
+        <div className="left-text">
+          <h4 style={{ color: colorCode, fontSize: "1.1rem" }}>{props.name}</h4>
           <h1
             className="hero-text"
             style={{
@@ -70,34 +55,31 @@ const MindMeadowProjectCard = () => {
               marginBottom: "0.7rem",
             }}
           >
-            Center for Child Development & Mental Health Services.
+            {props.shortdesc}
           </h1>
-          {/* Table Here */}
           <p>
-            Designed and developed a Website and Mobile Application for Mind
-            Meadow which is a Multidisciplinary Center focused on Child
-            Development & Mental Health Services.
+            {props.desc}
           </p>
 
           {/* Buttons */}
           <button
             style={{
-              border: "1.5px solid #6BC067", // Black border
+              border: `1.5px solid ${colorCode}`, // Black border
               borderRadius: "5px", // Rounded corners
               padding: "10px 20px", // Padding
               fontSize: "15px", // Font size
               fontWeight: "bold", // Bold text
               cursor: "pointer", // Cursor on hover
               backgroundColor: "transparent", // Transparent background
-              color: "#6BC067", // Black text color
+              color: colorCode, // Black text color
               outline: "none", // Remove default focus outline
-              marginTop: "2vh"
+              marginTop: "2vh",
             }}
             onClick={handleButtonClick}
           >
             Live Demo
-            <span style={{ marginLeft: '8px' }}>
-                <ImTv fontSize="15" color="#6BC067"/>
+            <span style={{ marginLeft: "8px" }}>
+              <ImTv fontSize="15" color={{colorCode}} />
             </span>
           </button>
         </div>
@@ -106,4 +88,4 @@ const MindMeadowProjectCard = () => {
   );
 };
 
-export default MindMeadowProjectCard;
+export default ProjectCard;
