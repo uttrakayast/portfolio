@@ -3,10 +3,10 @@ import Link from "next/link";
 import React from "react";
 import { AiFillPhone, AiFillMail } from "react-icons/ai";
 import {
-  ImTwitter,
+  // ImTwitter,
   ImInstagram,
   ImWhatsapp,
-  ImLinkedin2,
+  // ImLinkedin2,
   ImGithub,
 } from "react-icons/im";
 
@@ -44,40 +44,40 @@ var Contact = () => {
             Options are on the Table! Let&apos;s chat!
           </h6>
           <div className="container-tech-stack" style={{ marginTop: "3rem" }}>
-            <Link href="tel:9718649768">
+            <Link href="tel:7836872908">
               <div className="circle" title="Twitter">
                 <AiFillPhone fontSize="30" color="#147efb" />
               </div>
             </Link>
-            <Link href="mailto:uk481281@gmail.com">
+            <Link href="mailto:uttarakayast@gmail.com">
               <div className="circle" title="Twitter">
                 <AiFillMail fontSize="30" color="#147efb" />
               </div>
-            </Link>
-            <Link href="https://twitter.com/not_umesh" target="_blank">
+            {/* </Link> */}
+            {/* <Link href="https://twitter.com/not_umesh" target="_blank">
               <div className="circle" title="Twitter">
                 <ImTwitter fontSize="30" color="#147efb" />
-              </div>
+              </div> */}
             </Link>
-            <Link href="https://instagram.com/say_hon3y" target="_blank">
+            <Link href="https://www.instagram.com/uttra_kayast/" target="_blank">
               <div className="circle" title="Instagram">
                 <ImInstagram fontSize="30" color="#147efb" />
               </div>
             </Link>
             <Link
-              href="https://api.whatsapp.com/send/?phone=919718649768&text=Hey%20Umesh"
+              href="https://web.whatsapp.com/"
               target="_blank"
             >
-              <div className="circle" title="Twitter">
+              {/* <div className="circle" title="Twitter">
                 <ImWhatsapp fontSize="30" color="#147efb" />
-              </div>
+              </div> */}
             </Link>
-            <Link href="https://www.linkedin.com/in/its-umesh/" target="_blank">
-              <div className="circle" title="LinkedIn">
+            {/* <Link href="https://www.linkedin.com/in/its-umesh/" target="_blank"> */}
+              {/* <div className="circle" title="LinkedIn">
                 <ImLinkedin2 fontSize="30" color="#147efb" />
               </div>
-            </Link>
-            <Link href="https://github.com/Hon3y9718" target="_blank">
+            </Link> */}
+            <Link href="https://github.com/" target="_blank">
               <div className="circle" title="GitHub">
                 <ImGithub fontSize="30" color="#147efb" />
               </div>

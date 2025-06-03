@@ -34,7 +34,7 @@ var About = () => {
                 marginBottom: "0.7rem",
               }}
             >
-              A Software Engineer based in Delhi, India 📍
+              A Frontend Developer based in Delhi, India 📍
             </h1>
             <p
               style={{
@@ -45,13 +45,7 @@ var About = () => {
                 lineHeight: "1.5",
               }}
             >
-              📱 Full Stack Mobile Developer based in Delhi, India 📍 |
-              Specializing in Android (Kotlin/Java), Flutter, React Native |
-              Proficient in Node JS, Django (Python) | Expertise in crafting
-              dynamic UIs, optimizing code, and leveraging AWS for robust
-              backends. Passionate about delivering seamless user experiences
-              and collaborating with cross-functional teams. Let&apos;s build
-              something incredible together! #MobileDev #Backend #AWS
+             I’m a passionate Frontend Developer with a strong foundation in building responsive, user-friendly web interfaces using technologies like HTML, CSS, JavaScript, and React. I enjoy turning complex problems into simple, beautiful, and intuitive designs. With a focus on performance and accessibility, I aim to build applications that are fast, scalable, and engaging.
             </p>
           </div>
         </div>
