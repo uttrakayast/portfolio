@@ -45,12 +45,12 @@ var Contact = () => {
           </h6>
           <div className="container-tech-stack" style={{ marginTop: "3rem" }}>
             <Link href="tel:7836872908">
-              <div className="circle" title="Twitter">
+              <div className="circle" title="Phone">
                 <AiFillPhone fontSize="30" color="#147efb" />
               </div>
             </Link>
             <Link href="mailto:uttarakayast@gmail.com">
-              <div className="circle" title="Twitter">
+              <div className="circle" title="Mail">
                 <AiFillMail fontSize="30" color="#147efb" />
               </div>
             {/* </Link> */}
